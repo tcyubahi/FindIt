@@ -1,5 +1,3 @@
-Revised: 08.15.2019
-
 A REST API which provides auto-complete suggestions for places in large cities. Built with Nodejs and Express framework, and MongoDB. It uses geo data from Geonames.org and extracts it to create a database of the places on the server. 
 
 ## How to run the project
@@ -82,3 +80,6 @@ To run tests type `npm test`
 	- Error logging
 	- Extensive unit tests
 	- Refactor
+
+
+Revised: 08.15.2019
