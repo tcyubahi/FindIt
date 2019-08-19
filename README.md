@@ -1,6 +1,3 @@
-Author: Tresor Cyubahiro
-Date: 08.15.2019
-
 A REST API which provides auto-complete suggestions for places in large cities. Built with Nodejs and Express framework, and MongoDB. It uses geo data from Geonames.org and extracts it to create a database of the places on the server. 
 
 ## How to run the project
@@ -18,9 +15,9 @@ Prerequisites:
 	- `db.createCollection("usCities")` to create collection for storing place names and their properties
 
 2. cd into project folder and run `npm install` to install all dependencies as seen in `./package.json`
-3. Run `node dbInit.js` to initialize and populate a mongoDB collection containing all
+3. Run `npm init` to initialize and populate a mongoDB collection containing all
    the cities in file US.txt. Wait for the script to complete running (It may take a while depending on the data size).
-4. Run `node index.js` to start REST API server. 
+4. Run `npm start` to start REST API server. 
 5. Open your browser, and type `localhost:3000/suggestions?q=Temp`
 
 ## Documentation
@@ -29,7 +26,7 @@ I am using DocumentationJS to generate documentation for this project (https://d
 
 ## Tests
 
-To run tests type `npm test`
+To run tests run `npm test`
 	
 ## Request
 	
@@ -55,7 +52,7 @@ To run tests type `npm test`
 	- Set maximum distance from user.
 	- Paginate results and set maximum number of results (1 to 20, 20 by default). This is useful in case there is a large list of results. With this feature, one would be able to lazy load results in the user interface.
 
-## Database collection structure
+## Database collection schema
 
 	Example record: `{
 		"_id": "5d58c3cd1cfcc60a578887ad",
@@ -82,4 +79,8 @@ To run tests type `npm test`
 ## TODO (Not completed as of 08.18.2019)
 	- Error logging
 	- Extensive unit tests
+	- Hosting on Heroku
 	- Refactor
+
+
+Revised: 08.15.2019
