@@ -173,7 +173,9 @@ function prettify (places) {
 			"name": places[i].name,
 			"countryCode": places[i].countryCode,
 			"timeZone": places[i].timeZone,
-			"searchTextScore": parseFloat(places[i].score)
+			"searchTextScore": parseFloat(places[i].score),
+			"latitude": places[i].location.coordinates[1],
+			"longitude": places[i].location.coordinates[0]
 		}
 	}
 	return prettified;
@@ -192,8 +194,10 @@ function prettifyWithPosition (places) {
 			"countryCode": places[i].countryCode,
 			"timeZone": places[i].timeZone,
 			"searchTextScore": parseFloat(places[i].score),
+			"latitude": places[i].location.coordinates[1],
+			"longitude": places[i].location.coordinates[0],
 			"positionScore": places[i].positionScore,
-			"distanceFromUser": places[i].distanceFromUser
+			"distanceFromUser": places[i].distanceFromUser,
 		}
 	}
 	return prettified;
@@ -210,4 +214,3 @@ exports.getDistanceToPosition = getDistanceToPosition;
 exports.getDistances = getDistances;
 exports.prettify = prettify;
 exports.prettifyWithPosition = prettifyWithPosition;
-

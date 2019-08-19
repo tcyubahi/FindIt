@@ -123,7 +123,6 @@ app.get('/suggestions', async function (req, res) {
 
 			if(results.success) {
 				let prettified = await helper.prettify(results.found);
-				console.log(prettified);
 				res.status(200).send(JSON.stringify({"suggestions": prettified}));
 			} else {
 				res.status(200).send(JSON.stringify({"suggestions": {}}));
