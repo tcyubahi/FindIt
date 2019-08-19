@@ -26,7 +26,7 @@ I am using DocumentationJS to generate documentation for this project (https://d
 
 ## Tests
 
-To run tests type `npm test`
+To run tests run `npm test`
 	
 ## Request
 	
