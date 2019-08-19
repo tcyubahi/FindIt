@@ -79,6 +79,7 @@ To run tests run `npm test`
 ## TODO (Not completed as of 08.18.2019)
 	- Error logging
 	- Extensive unit tests
+	- Hosting on Heroku
 	- Refactor
 
 
