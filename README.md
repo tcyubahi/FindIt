@@ -1,9 +1,9 @@
-##Author: Tresor Cyubahiro
-##Date: 08.15.2019
+Author: Tresor Cyubahiro
+Date: 08.15.2019
 
 A REST API which provides auto-complete suggestions for places in large cities. Built with Nodejs and Express framework, and MongoDB. It uses geo data from Geonames.org and extracts it to create a database of the places on the server. 
 
-##How to run the project
+## How to run the project
 	
 Prerequisites:
 - npm, node, mongo shell must be installed on your machine
@@ -23,15 +23,15 @@ Prerequisites:
 4. Run `node index.js` to start REST API server. 
 5. Open your browser, and type `localhost:3000/suggestions?q=Temp`
 
-##Documentation
+## Documentation
 
 I am using DocumentationJS to generate documentation for this project (https://documentation.js.org/)
 
-##Tests
+## Tests
 
 To run tests type `npm test`
 	
-##Request
+## Request
 	
 	1. /suggestions?q=Mesa
 
@@ -41,21 +41,22 @@ To run tests type `npm test`
 
 		Results are sorted by distance from user's location in descending order.
 
-	##Optionally
+	## Optionally
 
 		- maxDistance (only when latitude and longitude have been provided): for getting places whose distance from the given coordinates is less or equal to this distance.
 		- paginate (whether to paginate results): 1 for paginate, 0 otherwise
 		- paginationCount (only when paginate is 1): indicates which batch of results to return 
 		- maxNumResults (default and maximum is 20): number of results to return
 
-##Features
+## Features
 	
 	- Retrieve suggestions based on search text. Suggestions are ordered by how close their names are to the search text. 
 	- Retrieve suggestions based on search text and user's location. Suggestions are ordered by how close their location are to the user's location.
 	- Set maximum distance from user.
 	- Paginate results and set maximum number of results (1 to 20, 20 by default). This is useful in case there is a large list of results. With this feature, one would be able to lazy load results in the user interface.
 
-##Database collection structure
+## Database collection structure
+
 	Example record: `{
 		"_id": "5d58c3cd1cfcc60a578887ad",
 		"name": "Mesa Mall", ----> Indexes for quick text search
@@ -71,7 +72,7 @@ To run tests type `npm test`
 
 	Adopted from data structure from Geonames.org
 
-##Improvements
+## Improvements
 	- Sort results by both text match score and distance to a provided location. Results are sorted by either search text match score or distance from user, but not both.
 	- Distributed database so that searches are faster.
 	- Make searches global. Currently designed for one region (All cities in the U.S.).
