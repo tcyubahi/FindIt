@@ -15,9 +15,9 @@ Prerequisites:
 	- `db.createCollection("usCities")` to create collection for storing place names and their properties
 
 2. cd into project folder and run `npm install` to install all dependencies as seen in `./package.json`
-3. Run `node dbInit.js` to initialize and populate a mongoDB collection containing all
+3. Run `npm init` to initialize and populate a mongoDB collection containing all
    the cities in file US.txt. Wait for the script to complete running (It may take a while depending on the data size).
-4. Run `node index.js` to start REST API server. 
+4. Run `npm start` to start REST API server. 
 5. Open your browser, and type `localhost:3000/suggestions?q=Temp`
 
 ## Documentation
