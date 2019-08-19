@@ -1,3 +1,9 @@
+/*
+	Author: Tresor Cyubahiro
+	Date: 08.15.2019
+	Description: Unit tests
+*/
+
 var assert = require('assert');
 var serverHelper = require('./serverHelper');
 var testData = require('./testData');
