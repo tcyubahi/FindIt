@@ -4,6 +4,7 @@
   "description": "REST API endpoint that provides auto-complete suggestions for large cities.",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "mocha tests.js"
   },
   "keywords": [
