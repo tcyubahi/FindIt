@@ -52,7 +52,7 @@ To run tests run `npm test`
 	- Set maximum distance from user.
 	- Paginate results and set maximum number of results (1 to 20, 20 by default). This is useful in case there is a large list of results. With this feature, one would be able to lazy load results in the user interface.
 
-## Database collection structure
+## Database collection schema
 
 	Example record: `{
 		"_id": "5d58c3cd1cfcc60a578887ad",
