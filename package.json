@@ -1,0 +1,22 @@
+{
+  "name": "findit",
+  "version": "1.0.0",
+  "description": "REST API endpoint that provides auto-complete suggestions for large cities.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha tests.js"
+  },
+  "keywords": [
+    "Find-it"
+  ],
+  "author": "Cyubahiro Tresor",
+  "license": "ISC",
+  "dependencies": {
+    "documentation": "^12.1.1",
+    "express": "^4.17.1",
+    "mongojs": "^2.6.0"
+  },
+  "devDependencies": {
+    "mocha": "^6.2.0"
+  }
+}
